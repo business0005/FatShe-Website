@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fatshe™ Packers and Movers — Bangalore</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#0A0B0A; --paper-2:#131510; --ink:#F2EFE6; --ink-soft:#A8B2AB;
+  --blue:#7FA3D9; --blue-dark:#4A6FA0; --amber:#F2B457; --red:#E6806E; --green:#7FBE9A;
+  --card:#121410; --line: rgba(242,239,230,0.14); --tape:#232619;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light){
+  :root:not([data-theme="dark"]){
+    --paper:#0A0B0A; --paper-2:#131510; --ink:#F2EFE6; --ink-soft:#A8B2AB;
+    --blue:#7FA3D9; --blue-dark:#4A6FA0; --amber:#F2B457; --red:#E6806E; --green:#7FBE9A;
+    --card:#121410; --line: rgba(242,239,230,0.14); --tape:#232619;
+  }
+}
+:root[data-theme="light"]{
+  --paper:#0A0B0A; --paper-2:#131510; --ink:#F2EFE6; --ink-soft:#A8B2AB;
+  --blue:#7FA3D9; --blue-dark:#4A6FA0; --amber:#F2B457; --red:#E6806E; --green:#7FBE9A;
+  --card:#121410; --line: rgba(242,239,230,0.14); --tape:#232619;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth; scroll-padding-top: env(safe-area-inset-top,0px);}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  padding-top: env(safe-area-inset-top,0px); padding-bottom: env(safe-area-inset-bottom,0px);
+}
+h1,h2,h3{font-family:'Archivo Black',Impact,sans-serif; font-weight:400; line-height:1.05; margin:0; letter-spacing:-0.01em;}
+p{line-height:1.65; color:var(--ink-soft); margin:0;}
+a{color:inherit;}
+.wrap{max-width:1160px; margin:0 auto; padding:0 24px;}
+.section{padding:84px 0;}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper);}
+
+/* texture */
+.tape-divider{height:14px; background-image:repeating-linear-gradient(135deg, var(--amber) 0 10px, transparent 10px 20px); opacity:.55;}
+
+/* header */
+header{position:sticky; top:0; z-index:5; background:var(--paper); border-bottom:2px dashed var(--line); padding-top:env(safe-area-inset-top,0px);}
+.nav{display:flex; align-items:center; justify-content:space-between; padding:16px 24px; max-width:1160px; margin:0 auto;}
+.logo{font-family:'Archivo Black',sans-serif; font-size:22px; display:flex; align-items:baseline; gap:4px;}
+.logo .tm{font-size:11px; align-self:flex-start;}
+.phones{display:flex; gap:14px; align-items:center; font-size:14px;}
+.phones a{text-decoration:none; padding:9px 16px; border-radius:3px; font-weight:700; display:inline-flex; align-items:center; gap:6px; transition:transform .15s ease;}
+.phones a:hover{transform:translateY(-1px);}
+.call-btn{background:var(--blue); color:#fff; box-shadow:0 3px 0 var(--blue-dark);}
+.wa-btn{background:#25D366; color:#073318; box-shadow:0 3px 0 #16893f;}
+@media (max-width:720px){ .phones{display:none;} }
+
+/* hero */
+.hero{padding:60px 0 44px; position:relative; overflow:hidden;}
+.hero-bg{position:absolute; inset:0; z-index:-1; opacity:.5;
+  background-image: radial-gradient(var(--line) 1.4px, transparent 1.4px);
+  background-size:22px 22px; mask-image:linear-gradient(to bottom, black, transparent 85%);}
+.hero-grid{display:grid; grid-template-columns:1.05fr 0.95fr; gap:44px; align-items:start;}
+@media (max-width:860px){ .hero-grid{grid-template-columns:1fr;} }
+.eyebrow-tag{display:inline-flex; align-items:center; gap:8px; background:var(--card); border:2px dashed var(--line); padding:7px 14px; font-size:13px; font-family:'Space Grotesk',sans-serif; color:var(--ink-soft); border-radius:3px; margin-bottom:20px;}
+.hero h1{font-size:clamp(36px,5.4vw,58px); margin-bottom:18px;}
+.hero h1 .city{color:var(--blue); position:relative;}
+.hero p.lead{font-size:18.5px; max-width:48ch; margin-bottom:30px;}
+.cta-row{display:flex; gap:14px; flex-wrap:wrap; margin-bottom:34px;}
+.btn{display:inline-flex; align-items:center; gap:8px; padding:15px 26px; border-radius:3px; text-decoration:none; font-weight:700; font-size:15px; border:none; cursor:pointer; transition:transform .15s ease;}
+.btn:hover{transform:translateY(-2px);}
+.btn-primary{background:var(--blue); color:#fff; box-shadow:0 4px 0 var(--blue-dark);}
+.btn-whatsapp{background:#25D366; color:#073318; box-shadow:0 4px 0 #16893f;}
+.scene{width:100%; height:auto; display:block; will-change:transform;}
+.truck-drive{animation:driveAcross 9s linear infinite;}
+@keyframes driveAcross{0%{transform:translateX(-220px);}100%{transform:translateX(650px);}}
+.truck-bob{animation:truckBob 1.4s ease-in-out infinite;}
+@keyframes truckBob{0%,100%{transform:translateY(0);}50%{transform:translateY(-3px);}}
+.wheel-rim{animation:wheelSpin .7s linear infinite;}
+@keyframes wheelSpin{to{transform:rotate(360deg);}}
+.road-line{animation:roadMove .5s linear infinite;}
+@keyframes roadMove{to{stroke-dashoffset:-28;}}
+.exhaust-puff{animation:puff 1.8s ease-out infinite;}
+@keyframes puff{0%{opacity:.55; transform:translate(0,0) scale(.6);}100%{opacity:0; transform:translate(-10px,-22px) scale(1.4);}}
+@media (prefers-reduced-motion: reduce){
+  .truck-drive{animation:none !important; transform:translateX(205px);}
+  .truck-bob, .wheel-rim, .road-line, .exhaust-puff{animation:none !important;}
+}
+.stat-strip{display:flex; gap:30px; flex-wrap:wrap; margin-top:8px; padding-top:28px; border-top:1px dashed var(--line);}
+.stat{min-width:90px;}
+.stat b{display:block; font-family:'Archivo Black',sans-serif; font-size:27px; color:var(--blue);}
+.stat span{font-size:12.5px; color:var(--ink-soft); font-family:'Space Grotesk',sans-serif;}
+
+/* quote card */
+.quote-card{background:var(--card); border:2px dashed var(--line); border-radius:6px; padding:30px; position:relative; box-shadow:0 18px 40px -22px rgba(0,0,0,.35);}
+.quote-card::before{content:"FREE QUOTE"; position:absolute; top:-14px; left:26px; background:var(--amber); color:#241a06; font-size:11px; font-weight:800; padding:4px 12px; font-family:'Space Grotesk',sans-serif; letter-spacing:.05em; border-radius:2px; transform:rotate(-2deg);}
+.quote-card::after{content:""; position:absolute; top:16px; right:16px; width:34px; height:34px; border-radius:50%; border:2px solid var(--line); opacity:.5;}
+.quote-card h3{font-size:20px; margin-bottom:4px; font-family:'Archivo Black',sans-serif;}
+.quote-card p.sub{font-size:13.5px; margin-bottom:20px;}
+.field{margin-bottom:14px;}
+.field label{display:block; font-size:12.5px; color:var(--ink-soft); margin-bottom:5px; font-weight:600; font-family:'Space Grotesk',sans-serif;}
+.field input, .field select{width:100%; padding:12px; border-radius:4px; border:1px solid var(--line); background:var(--paper); color:var(--ink); font-size:14.5px; font-family:inherit;}
+.field input:focus, .field select:focus{outline:2px solid var(--blue); outline-offset:1px;}
+.field-row{display:grid; grid-template-columns:1fr 1fr; gap:12px;}
+.submit-btn{width:100%; padding:15px; background:var(--red); color:#fff; border:none; border-radius:4px; font-weight:700; font-size:15px; cursor:pointer; margin-top:4px; box-shadow:0 4px 0 #8c2e24; transition:transform .15s ease;}
+.submit-btn:hover{transform:translateY(-2px);}
+.form-note{font-size:12px; color:var(--ink-soft); margin-top:10px; text-align:center;}
+
+/* trust strip */
+.trust-strip{display:flex; flex-wrap:wrap; gap:28px; justify-content:center; align-items:center; padding:30px 0; border-top:1px dashed var(--line); border-bottom:1px dashed var(--line);}
+.trust-item{display:flex; align-items:center; gap:10px; font-family:'Space Grotesk',sans-serif; font-size:13.5px; font-weight:600; color:var(--ink-soft);}
+.trust-item svg{flex-shrink:0;}
+
+/* audience tabs */
+.tabs-nav{display:flex; gap:8px; flex-wrap:wrap; margin-bottom:28px;}
+.tab-btn{font-family:'Space Grotesk',sans-serif; font-size:13.5px; font-weight:600; padding:10px 18px; border-radius:999px; border:1px solid var(--line); background:transparent; color:var(--ink-soft); cursor:pointer; transition:background .2s ease, color .2s ease;}
+.tab-btn.active{background:var(--blue); color:#fff; border-color:var(--blue);}
+.tab-panel{display:none; background:var(--card); border-radius:20px; border:1px solid var(--line); padding:36px; gap:28px; grid-template-columns:1fr 1fr; align-items:center;}
+.tab-panel.active{display:grid; animation:tabIn .4s ease;}
+@keyframes tabIn{from{opacity:0; transform:translateY(8px)} to{opacity:1; transform:translateY(0)}}
+@media (prefers-reduced-motion: reduce){ .tab-panel.active{animation:none;} }
+@media (max-width:700px){ .tab-panel{grid-template-columns:1fr; padding:26px;} }
+.tab-panel h3{font-size:22px; margin-bottom:10px;}
+.tab-panel p{font-size:14.5px; margin-bottom:16px;}
+.tab-panel ul{margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:10px;}
+.tab-panel li{font-size:13.5px; color:var(--ink-soft); display:flex; gap:8px; align-items:flex-start;}
+.tab-panel li svg{flex-shrink:0; margin-top:2px;}
+.tab-visual{border-radius:16px; min-height:160px; display:flex; align-items:center; justify-content:center; font-family:'Archivo Black',sans-serif; font-size:15px; text-align:center; padding:20px;}
+
+/* services */
+.section-head{max-width:62ch; margin-bottom:44px;}
+.section-head .kicker{color:var(--blue); font-weight:700; font-size:13.5px; margin-bottom:8px; display:block; font-family:'Space Grotesk',sans-serif;}
+.section-head h2{font-size:clamp(27px,3.6vw,39px); margin-bottom:10px;}
+.services-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:16px;}
+@media (max-width:860px){ .services-grid{grid-template-columns:repeat(2,1fr);} }
+@media (max-width:480px){ .services-grid{grid-template-columns:1fr;} }
+.service-card{background:var(--tint); border-radius:20px; padding:28px 24px; min-height:172px; transition:transform .25s cubic-bezier(.2,.7,.3,1), box-shadow .25s ease; border:1px solid var(--line);}
+.service-card:hover{transform:translateY(-5px); box-shadow:0 14px 28px -16px rgba(0,0,0,.5);}
+.ic-chip{width:42px; height:42px; border-radius:12px; background:var(--chip); display:flex; align-items:center; justify-content:center; margin-bottom:16px;}
+.service-card h3{font-size:16.5px; margin-bottom:7px; font-family:'Archivo Black',sans-serif;}
+.service-card p{font-size:13.5px;}
+
+/* why choose */
+.why{background:var(--paper-2);}
+.why-list{display:grid; grid-template-columns:1fr 1fr; gap:24px 38px;}
+@media (max-width:700px){ .why-list{grid-template-columns:1fr;} }
+.why-item{display:flex; gap:16px; align-items:flex-start; padding-bottom:20px; border-bottom:1px dashed var(--line);}
+.why-item .ic-badge{flex-shrink:0; width:38px; height:38px; border-radius:50%; background:var(--card); border:1px solid var(--line); display:flex; align-items:center; justify-content:center;}
+.why-item h4{font-size:15.5px; margin-bottom:4px; font-weight:700; font-family:'Archivo Black',sans-serif;}
+.why-item p{font-size:13.5px;}
+
+/* process */
+.process-row{display:grid; grid-template-columns:repeat(4,1fr); gap:0; position:relative;}
+@media (max-width:860px){ .process-row{grid-template-columns:1fr 1fr;} }
+@media (max-width:480px){ .process-row{grid-template-columns:1fr;} }
+.process-step{padding:24px 22px 22px 0; position:relative;}
+.process-step .n{font-family:'Archivo Black',sans-serif; font-size:42px; color:var(--amber); display:block; margin-bottom:12px;}
+.process-step h4{font-size:16px; margin-bottom:6px; font-weight:700; font-family:'Archivo Black',sans-serif;}
+.process-step p{font-size:13.5px;}
+
+/* testimonials */
+.testi-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+@media (max-width:860px){ .testi-grid{grid-template-columns:1fr;} }
+.testi-card{background:var(--card); border:1px solid var(--line); border-radius:6px; padding:24px; box-shadow:0 10px 24px -18px rgba(0,0,0,.3);}
+.stars{color:var(--amber); font-size:15px; margin-bottom:12px; letter-spacing:2px;}
+.testi-card p.quote{font-size:14.5px; margin-bottom:18px;}
+.testi-who{display:flex; align-items:center; gap:12px; font-size:13px; font-weight:700; color:var(--ink);}
+.avatar{width:38px; height:38px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:'Space Grotesk',sans-serif; font-weight:700; color:#fff; font-size:14px; flex-shrink:0;}
+.testi-who span{display:block; font-weight:400; color:var(--ink-soft); font-size:12.5px;}
+
+footer{background:var(--ink); color:var(--paper); padding:44px 0 calc(28px + env(safe-area-inset-bottom,0px));}
+footer .wrap{display:flex; flex-wrap:wrap; justify-content:space-between; gap:20px; align-items:center;}
+footer .logo{color:var(--paper);}
+footer a.foot-call{color:var(--amber); text-decoration:none; font-weight:700;}
+.fine{font-size:12px; color:#9aa59c; margin-top:18px;}
+
+.reveal{opacity:0; transform:translateY(26px); transition:opacity .7s cubic-bezier(.2,.7,.3,1), transform .7s cubic-bezier(.2,.7,.3,1);}
+.reveal.visible{opacity:1; transform:translateY(0);}
+.stagger > *{opacity:0; transform:translateY(22px); transition:opacity .6s cubic-bezier(.2,.7,.3,1), transform .6s cubic-bezier(.2,.7,.3,1);}
+.stagger.visible > *{opacity:1; transform:translateY(0);}
+.stagger.visible > *:nth-child(1){transition-delay:.02s}
+.stagger.visible > *:nth-child(2){transition-delay:.08s}
+.stagger.visible > *:nth-child(3){transition-delay:.14s}
+.stagger.visible > *:nth-child(4){transition-delay:.20s}
+.stagger.visible > *:nth-child(5){transition-delay:.26s}
+.stagger.visible > *:nth-child(6){transition-delay:.32s}
+.stagger.visible > *:nth-child(7){transition-delay:.38s}
+.stagger.visible > *:nth-child(8){transition-delay:.44s}
+@media (prefers-reduced-motion: reduce){
+  .reveal, .stagger > *{transition:none !important; opacity:1 !important; transform:none !important;}
+}
+
+.sticky-mobile{display:none;}
+@media (max-width:720px){
+  .sticky-mobile{display:flex; position:fixed; left:0; right:0; bottom:0; z-index:9; padding-bottom:env(safe-area-inset-bottom,0px);}
+  .sticky-mobile a{flex:1; text-align:center; padding:14px 0; font-weight:700; text-decoration:none; font-size:14.5px;}
+  .sticky-mobile .c{background:var(--blue); color:#fff;}
+  .sticky-mobile .w{background:#25D366; color:#073318;}
+  body{padding-bottom:calc(52px + env(safe-area-inset-bottom,0px));}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">Fatshe<span class="tm">™</span></div>
+    <div class="phones">
+      <a class="call-btn" href="tel:+918121951331">📞 81219 51331</a>
+      <a class="wa-btn" href="https://wa.me/918121951331" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <div class="hero-bg"></div>
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow-tag">📦 Serving all zones of Bangalore</span>
+        <h1>Packers and Movers<br>in <span class="city">Bangalore</span></h1>
+        <p class="lead">Household shifting, office relocation and vehicle transport, handled by a trained crew with proper packing materials — from quote to delivery, with no surprises on the bill.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="tel:+918121951331">Call Now</a>
+          <a class="btn btn-whatsapp" href="https://wa.me/918121951331" target="_blank" rel="noopener">Message on WhatsApp</a>
+        </div>
+
+        <svg class="scene" viewBox="0 0 580 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animated illustration of a moving truck driving along a road past the Bangalore skyline">
+          <defs>
+            <linearGradient id="bodyGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#A9CBF2"/>
+              <stop offset="55%" stop-color="var(--blue)"/>
+              <stop offset="100%" stop-color="var(--blue-dark)"/>
+            </linearGradient>
+            <linearGradient id="cabGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#7CA2D6"/>
+              <stop offset="100%" stop-color="var(--blue-dark)"/>
+            </linearGradient>
+            <linearGradient id="windowGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#EAF3FF"/>
+              <stop offset="100%" stop-color="#8FB0DE"/>
+            </linearGradient>
+            <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#FFF2C2" stop-opacity="0.95"/>
+              <stop offset="100%" stop-color="#FFF2C2" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="shadowGrad" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#000" stop-opacity="0.38"/>
+              <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <!-- skyline -->
+          <g opacity="0.55" fill="var(--ink-soft)">
+            <rect x="20" y="110" width="26" height="60"/>
+            <rect x="52" y="90" width="20" height="80"/>
+            <polygon points="82,170 82,80 97,65 112,80 112,170"/>
+            <rect x="120" y="120" width="18" height="50"/>
+            <rect x="430" y="95" width="22" height="75"/>
+            <rect x="458" y="115" width="16" height="55"/>
+            <circle cx="500" cy="118" r="14"/>
+            <rect x="486" y="118" width="28" height="52"/>
+            <rect x="540" y="100" width="20" height="70"/>
+          </g>
+          <!-- road -->
+          <rect x="0" y="170" width="580" height="4" fill="var(--line)"/>
+          <line class="road-line" x1="0" y1="186" x2="580" y2="186" stroke="var(--ink-soft)" stroke-width="2" stroke-dasharray="14 14" opacity="0.5"/>
+          <!-- truck: outer group drives left-to-right, inner group aligns wheels to the road, innermost bobs while driving -->
+          <g class="truck-drive">
+            <g transform="translate(0,71)">
+              <ellipse cx="93" cy="107" rx="100" ry="9" fill="url(#shadowGrad)"/>
+              <g class="truck-bob">
+                <rect x="0" y="34" width="130" height="56" rx="6" fill="url(#bodyGrad)"/>
+                <rect x="0" y="34" width="130" height="9" rx="4" fill="#fff" opacity="0.22"/>
+                <rect x="4" y="47" width="122" height="1.5" fill="#fff" opacity="0.14"/>
+                <path d="M130 54 h32 a18 18 0 0 1 18 18 v18 h-50 z" fill="url(#cabGrad)"/>
+                <rect x="141" y="60" width="25" height="19" rx="3" fill="url(#windowGrad)"/>
+                <rect x="141" y="60" width="25" height="6" fill="#fff" opacity="0.4"/>
+                <circle cx="181" cy="83" r="10" fill="url(#glow)"/>
+                <circle cx="181" cy="83" r="4" fill="#FFE9A8"/>
+                <rect x="128" y="86" width="55" height="5" rx="2" fill="var(--ink)" opacity="0.45"/>
+                <rect x="171" y="38" width="4" height="16" rx="2" fill="var(--ink)" opacity="0.6"/>
+                <g class="wheel-rim" style="transform-origin:36px 94px">
+                  <circle cx="36" cy="94" r="13" fill="#14161a"/>
+                  <circle cx="36" cy="94" r="5.5" fill="#cfd4cd"/>
+                  <line x1="36" y1="88.5" x2="36" y2="99.5" stroke="#14161a" stroke-width="2"/>
+                  <line x1="30.5" y1="94" x2="41.5" y2="94" stroke="#14161a" stroke-width="2"/>
+                </g>
+                <g class="wheel-rim" style="transform-origin:150px 94px">
+                  <circle cx="150" cy="94" r="13" fill="#14161a"/>
+                  <circle cx="150" cy="94" r="5.5" fill="#cfd4cd"/>
+                  <line x1="150" y1="88.5" x2="150" y2="99.5" stroke="#14161a" stroke-width="2"/>
+                  <line x1="144.5" y1="94" x2="155.5" y2="94" stroke="#14161a" stroke-width="2"/>
+                </g>
+                <rect x="12" y="10" width="30" height="24" rx="2" fill="var(--amber)"/>
+                <rect x="48" y="6" width="30" height="28" rx="2" fill="var(--red)" opacity="0.92"/>
+                <rect x="84" y="12" width="26" height="22" rx="2" fill="var(--amber)" opacity="0.92"/>
+                <text x="18" y="56" font-family="Space Grotesk" font-size="12" fill="#fff" font-weight="700" letter-spacing="0.5">FATSHE™</text>
+                <circle class="exhaust-puff" cx="173" cy="36" r="3" fill="#cfd4cd" style="animation-delay:0s"/>
+                <circle class="exhaust-puff" cx="173" cy="36" r="3" fill="#cfd4cd" style="animation-delay:.6s"/>
+                <circle class="exhaust-puff" cx="173" cy="36" r="3" fill="#cfd4cd" style="animation-delay:1.2s"/>
+              </g>
+            </g>
+          </g>
+          <circle cx="70" cy="178" r="4" fill="var(--amber)"/>
+          <circle cx="520" cy="178" r="5" fill="var(--red)"/>
+        </svg>
+      </div>
+
+      <form class="quote-card" onsubmit="event.preventDefault(); this.querySelector('.form-note').textContent='Thanks — we will call you back shortly.'; this.querySelector('.submit-btn').textContent='Enquiry sent ✓';">
+        <h3>Get a free, no-obligation quote</h3>
+        <p class="sub">Share a few details and our team will call you back within the hour.</p>
+        <div class="field-row">
+          <div class="field"><label>Full name</label><input required placeholder="Your name"></div>
+          <div class="field"><label>Mobile number</label><input required type="tel" placeholder="10-digit mobile"></div>
+        </div>
+        <div class="field-row">
+          <div class="field"><label>Pickup location</label><input required placeholder="e.g. Whitefield"></div>
+          <div class="field"><label>Delivery location</label><input required placeholder="e.g. Indiranagar"></div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label>House / office size</label>
+            <select required>
+              <option value="">Select size</option>
+              <option>1 BHK</option><option>2 BHK</option><option>3 BHK</option><option>Office</option>
+            </select>
+          </div>
+          <div class="field"><label>Shifting date</label><input required type="date"></div>
+        </div>
+        <div class="field">
+          <label>Type of service</label>
+          <select required>
+            <option value="">Select service</option>
+            <option>Household shifting</option><option>Office relocation</option>
+            <option>Local shifting</option><option>Domestic relocation</option>
+            <option>Car / bike transport</option><option>Packing & unpacking only</option>
+            <option>Warehousing & storage</option>
+          </select>
+        </div>
+        <button class="submit-btn" type="submit">Submit enquiry</button>
+        <p class="form-note">No spam — just a callback with your free quote.</p>
+      </form>
+    </div>
+
+    <div class="stat-strip">
+      <div class="stat"><b>12+ yrs</b><span>IN BANGALORE RELOCATIONS</span></div>
+      <div class="stat"><b>8,000+</b><span>HOMES & OFFICES MOVED</span></div>
+      <div class="stat"><b>15 min</b><span>TYPICAL QUOTE RESPONSE</span></div>
+      <div class="stat"><b>4.6★</b><span>AVERAGE CUSTOMER RATING</span></div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="trust-strip reveal">
+      <div class="trust-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.4 8.5-8 10-4.6-1.5-8-5-8-10V6l8-4z"/></svg>Transit insurance available</div>
+      <div class="trust-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>GPS-tracked vehicles</div>
+      <div class="trust-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M7 7V5a2 2 0 012-2h6a2 2 0 012 2v2"/></svg>Itemised, upfront pricing</div>
+      <div class="trust-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><path d="M3 12h4l2-6 4 12 2-6h6"/></svg>15-min average callback</div>
+    </div>
+  </div>
+
+  <section class="section wrap" id="who">
+    <div class="section-head reveal">
+      <span class="kicker">Who we help</span>
+      <h2>Built for how different movers actually move</h2>
+    </div>
+    <div class="tabs-nav reveal" role="tablist">
+      <button class="tab-btn active" data-tab="homes">Homeowners</button>
+      <button class="tab-btn" data-tab="offices">Corporates</button>
+      <button class="tab-btn" data-tab="longdist">Long-distance</button>
+      <button class="tab-btn" data-tab="vehicles">Vehicle owners</button>
+    </div>
+    <div class="reveal">
+      <div class="tab-panel active" id="tab-homes">
+        <div><h3>Moving a 1, 2 or 3BHK home</h3><p>Full-home packing with foam, blankets and labelled boxes, so unpacking at the other end is just as easy.</p>
+          <ul>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Free home visit for an accurate quote</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Dismantling and reassembly of furniture</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Fragile-item handling for electronics and glass</li>
+          </ul></div>
+        <div class="tab-visual" style="background:rgba(127,163,217,.12); color:var(--blue)">🏠 Household moves</div>
+      </div>
+      <div class="tab-panel" id="tab-offices">
+        <div><h3>Relocating an office floor</h3><p>Planned around your business hours, with desks, files and IT equipment tracked and labelled.</p>
+          <ul>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Weekend and after-hours moves available</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Asset tagging for IT and electronics</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Minimal downtime, ready to work by Monday</li>
+          </ul></div>
+        <div class="tab-visual" style="background:rgba(242,180,87,.12); color:var(--amber)">🏢 Office moves</div>
+      </div>
+      <div class="tab-panel" id="tab-longdist">
+        <div><h3>Moving to another city</h3><p>Inter-city relocation across India, with route-tracked trucks and clear delivery windows.</p>
+          <ul>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Optional transit insurance for long hauls</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>GPS tracking shared with you in transit</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Door-to-door delivery, no transshipment</li>
+          </ul></div>
+        <div class="tab-visual" style="background:rgba(230,128,110,.12); color:var(--red)">🚚 Inter-city moves</div>
+      </div>
+      <div class="tab-panel" id="tab-vehicles">
+        <div><h3>Shipping a car or bike</h3><p>Covered-carrier transport for your vehicle, handled alongside your household move or on its own.</p>
+          <ul>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Enclosed carriers for hatchback, sedan and SUV</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Condition report before and after transport</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Door-to-door pickup and delivery</li>
+          </ul></div>
+        <div class="tab-visual" style="background:rgba(127,190,154,.12); color:var(--green)">🚗 Vehicle transport</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap" id="services">
+    <div class="section-head reveal">
+      <span class="kicker">What we move</span>
+      <h2>Services built around how Bangalore actually relocates</h2>
+      <p>Pick exactly what you need — from a single room to an entire office floor.</p>
+    </div>
+    <div class="services-grid stagger">
+      <div class="service-card" style="--tint:rgba(127,163,217,.10); --chip:rgba(127,163,217,.20)"><div class="ic-chip"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="1.8"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg></div><h3>Household shifting</h3><p>Full-home packing, loading and delivery, room by room.</p></div>
+      <div class="service-card" style="--tint:rgba(242,180,87,.10); --chip:rgba(242,180,87,.20)"><div class="ic-chip"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2"/></svg></div><h3>Office relocation</h3><p>Desks, files and IT equipment moved with minimal downtime.</p></div>
+      <div class="service-card" style="--tint:rgba(230,128,110,.10); --chip:rgba(230,128,110,.20)"><div class="ic-chip"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.8"><circle cx="12" cy="10" r="3"/><path d="M12 21s7-7.5 7-12a7 7 0 10-14 0c0 4.5 7 12 7 12z"/></svg></div><h3>Local shifting</h3><p>Within-city moves across any Bangalore locality.</p></div>
+      <div class="service-card" style="--tint:rgba(127,190,154,.10); --chip:rgba(127,190,154,.20)"><div class="ic-chip"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.8"><rect x="2" y="9" width="13" height="8" rx="1"/><path d="M15 11h4l3 3v3h-7z"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="19" r="2"/></svg></div><h3>Domestic relocation</h3><p>Inter-city moves to and from any state in India.</p></div>
+      <div class="service-card" style="--tint:rgba(127,163,217,.10); --chip:rgba(127,163,217,.20)"><div class="ic-chip"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="1.8"><rect x="2" y="10" width="14" height="7" rx="1"/><path d="M16 12h3l3 2.5v2.5h-6z"/><circle cx="6.5" cy="19.5" r="1.8"/><circle cx="17.5" cy="19.5" r="1.8"/></svg></div><h3>Car & bike transport</h3><p>Covered-carrier vehicle transport, door to door.</p></div>
+      <div class="service-card" style="--tint:rgba(242,180,87,.10); --chip:rgba(242,180,87,.20)"><div class="ic-chip"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="1.8"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 7v10l9 4 9-4V7"/><path d="M12 11v10"/></svg></div><h3>Packing & unpacking</h3><p>Grade-A material, fragile items wrapped and labelled.</p></div>
+      <div class="service-card" style="--tint:rgba(230,128,110,.10); --chip:rgba(230,128,110,.20)"><div class="ic-chip"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.8"><path d="M4 19V9l8-5 8 5v10"/><path d="M4 19h16"/><path d="M9 19v-6h6v6"/></svg></div><h3>Loading & unloading</h3><p>Trained manpower for heavy and bulky items, done safely.</p></div>
+      <div class="service-card" style="--tint:rgba(127,190,154,.10); --chip:rgba(127,190,154,.20)"><div class="ic-chip"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.8"><rect x="3" y="8" width="18" height="12" rx="1"/><path d="M3 8l9-5 9 5"/><path d="M8 14h3M13 14h3"/></svg></div><h3>Warehousing & storage</h3><p>Short or long-term storage in secure, monitored facilities.</p></div>
+    </div>
+  </section>
+
+  <section class="section why" id="why">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">Why choose Fatshe</span>
+        <h2>Fewer broken promises, more delivered boxes</h2>
+      </div>
+      <div class="why-list stagger">
+        <div class="why-item"><span class="ic-badge"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></span><div><h4>Experienced moving professionals</h4><p>Crews trained on fragile, bulky and high-value items.</p></div></div>
+        <div class="why-item"><span class="ic-badge"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></span><div><h4>Quality packing materials</h4><p>Bubble wrap, foam and double-walled boxes as standard.</p></div></div>
+        <div class="why-item"><span class="ic-badge"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></span><div><h4>Trained manpower</h4><p>Dedicated teams for packing, loading and unloading.</p></div></div>
+        <div class="why-item"><span class="ic-badge"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></span><div><h4>Safe transportation</h4><p>GPS-tracked vehicles suited to your load size.</p></div></div>
+        <div class="why-item"><span class="ic-badge"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></span><div><h4>Transparent pricing</h4><p>Itemised quotes — no hidden charges after booking.</p></div></div>
+        <div class="why-item"><span class="ic-badge"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></span><div><h4>Transit insurance options</h4><p>Optional coverage for added peace of mind in transit.</p></div></div>
+        <div class="why-item"><span class="ic-badge"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></span><div><h4>Timely delivery</h4><p>Clear delivery windows, communicated in advance.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap" id="process">
+    <div class="section-head reveal">
+      <span class="kicker">How it works</span>
+      <h2>Four steps from enquiry to delivery</h2>
+    </div>
+    <div class="process-row stagger">
+      <div class="process-step"><span class="n">1</span><h4>Share requirements</h4><p>Tell us your pickup, destination, size and date.</p></div>
+      <div class="process-step"><span class="n">2</span><h4>Get a free quotation</h4><p>A clear, itemised estimate — usually within the hour.</p></div>
+      <div class="process-step"><span class="n">3</span><h4>Packing & loading</h4><p>Our crew arrives on schedule and packs everything securely.</p></div>
+      <div class="process-step"><span class="n">4</span><h4>Transport & delivery</h4><p>Safe transit and delivery within the agreed window.</p></div>
+    </div>
+  </section>
+
+  <section class="section wrap" id="reviews">
+    <div class="section-head reveal">
+      <span class="kicker">Customer reviews</span>
+      <h2>What recent customers are saying</h2>
+      <p>Pulled from Google reviews and verified bookings.</p>
+    </div>
+    <div class="testi-grid stagger">
+      <div class="testi-card"><div class="stars">★★★★★</div><p class="quote">Smooth, hassle-free move from Whitefield. Packing material was solid and the truck arrived on time.</p><div class="testi-who"><span class="avatar" style="background:var(--blue)">AR</span><div>Arjun R.<span>HSR Layout</span></div></div></div>
+      <div class="testi-card"><div class="stars">★★★★★</div><p class="quote">Office relocation over a weekend with zero downtime on Monday. Clearly labelled boxes made unpacking easy.</p><div class="testi-who"><span class="avatar" style="background:var(--red)">DN</span><div>Divya N.<span>Office move</span></div></div></div>
+      <div class="testi-card"><div class="stars">★★★★☆</div><p class="quote">Good service overall — would have liked a pre-move home survey, but delivery was on time and nothing was damaged.</p><div class="testi-who"><span class="avatar" style="background:var(--amber); color:#241a06">SD</span><div>Sachin D.<span>2BHK, Koramangala</span></div></div></div>
+    </div>
+  </section>
+</main>
+
+<div class="tape-divider"></div>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="logo">Fatshe™</div>
+      <p style="color:#c7cfc9; font-size:13.5px; margin-top:6px;">Packers and Movers, Bangalore</p>
+    </div>
+    <div>
+      <a class="foot-call" href="tel:+918121951331">81219 51331</a> &nbsp;·&nbsp;
+      <a class="foot-call" href="tel:+918097631623">80976 31623</a>
+    </div>
+  </div>
+  <div class="wrap fine">Mon–Sat 10:00 am – 8:00 pm · Sunday closed</div>
+</footer>
+
+<div class="sticky-mobile">
+  <a class="c" href="tel:+918121951331">📞 Call Now</a>
+  <a class="w" href="https://wa.me/918121951331" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script>
+(function(){
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var targets = document.querySelectorAll('.reveal, .stagger');
+  if (reduce || !('IntersectionObserver' in window)) {
+    targets.forEach(function(el){ el.classList.add('visible'); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    targets.forEach(function(el){ io.observe(el); });
+  }
+
+  // hero parallax, Google-for-Education style scroll reveal on the truck scene
+  var scene = document.querySelector('.scene');
+  if (scene && !reduce) {
+    var ticking = false;
+    window.addEventListener('scroll', function(){
+      if (!ticking) {
+        window.requestAnimationFrame(function(){
+          var y = window.scrollY || 0;
+          var shift = Math.min(y * 0.12, 40);
+          var fade = Math.max(1 - y / 500, 0.35);
+          scene.style.transform = 'translateY(' + shift + 'px)';
+          scene.style.opacity = fade;
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, { passive: true });
+  }
+
+  // audience tabs
+  var tabBtns = document.querySelectorAll('.tab-btn');
+  tabBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      tabBtns.forEach(function(b){ b.classList.remove('active'); });
+      document.querySelectorAll('.tab-panel').forEach(function(p){ p.classList.remove('active'); });
+      btn.classList.add('active');
+      var panel = document.getElementById('tab-' + btn.dataset.tab);
+      if (panel) panel.classList.add('active');
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
